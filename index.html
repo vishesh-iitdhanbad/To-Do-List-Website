@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="icon" href="favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <a href="#"><span><i class="menu material-icons">view_headline</i></a><br>
+        <a href="#"><span><i class="material-icons">done</i><span class="icon-text">Your List</span></a><br>
+        <a href="#"><span><i class="material-icons">info</i><span class="icon-text">Developer</span></a><br>
+    </div>
+    <div id="navbar">
+        <span>To Do List</span>
+    </div>
+    <div id="main">
+        <div>
+            <div class="strip">
+                <span class="date white">Date 22-08-2020</span>
+                <span class="option"><i class="material-icons white">delete</i></span>
+            </div>
+        </div>
+        <div>
+            <div class="strip">
+                <span class="date white">Date 22-08-2020</span>
+                <span class="option"><i class="material-icons white">delete</i></span>
+            </div>
+        </div>
+        <div>
+            <div class="strip">
+                <span class="date white">Date 22-08-2020</span>
+                <span class="option"><i class="material-icons white">delete</i></span>
+            </div>
+        </div>
+        <div>
+            <div class="strip">
+                <span class="date white">Date 22-08-2020</span>
+                <span class="option"><i class="material-icons white">delete</i></span>
+            </div>
+        </div>
+        <div>
+            <div class="strip">
+                <span class="date white">Date 22-08-2020</span>
+                <span class="option"><i class="material-icons white">delete</i></span>
+            </div>
+        </div>
+        <div>
+            <div class="strip">
+                <span class="date white">Date 22-08-2020</span>
+                <span class="option"><i class="material-icons white">delete</i></span>
+            </div>
+        </div>
+        <div>
+            <div class="add">
+                <div class="add-inner">
+                    <button style="background: none; outline: none; border: none; cursor: pointer;">
+                        <i class="material-icons" style="font-size: 80px;">add</i>
+                    </button>
+                    <span>Add a New List</span>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+    <div id="navbar" style="position:fixed; font-size:small; font-weight: 200px; height: 23px; top: 97vh;">
+        <span>Copyright &#169; 2020 Vishesh Jindal</span>
+    </div>
+    <!--script for side bar -->
+    <script>
+        var mini = true;
+        function toggleSidebar() {
+            if(window.screen.width<=380){
+                return;
+            }   
+            if (mini) {
+                console.log("opening sidebar");
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                this.mini = false;
+            } else {
+                console.log("closing sidebar");
+                
+                document.getElementById("mySidebar").style.width = "55px";
+                document.getElementById("main").style.marginLeft = "66px";
+                this.mini = true;
+            }
+        }
+    </script>
+</body>
+</html>
