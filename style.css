@@ -140,4 +140,14 @@ body {
     }
   }
   
+  @media (max-width: 380px){
+    .option i{
+      margin-left: 94px;
+    }
+  }
+  @media (max-width: 368px){
+    .option i{
+      margin-left: 85px;
+    }
+  }
   
